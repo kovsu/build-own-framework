@@ -1,0 +1,21 @@
+{
+  "name": "custom-framework",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rimraf dist .parcel-cache && parcel index.html",
+    "build": "parcel build index.html",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "dependencies": {
+    "snabbdom": "^3.5.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.1",
+    "eslint": "^8.56.0",
+    "parcel": "^2.10.3",
+    "rimraf": "^5.0.5"
+  }
+}
